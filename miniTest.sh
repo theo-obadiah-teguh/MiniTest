@@ -13,6 +13,7 @@ execPath="`pwd`"
 # Set a name for the compiled executable (remove .cpp)
 # Usage Example: 
 # Filename = exec.cpp, when executed will be ./exec
+# YOU MAY SWITCH .cpp IN THE FOLLOWING COMMAND WITH .c AS NEEDED
 execName="`ls | grep $1 | sed 's/.cpp//'`"
 
 # Compile the given C/C++ filename (stored in argument 1)
