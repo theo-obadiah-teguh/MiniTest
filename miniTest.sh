@@ -4,8 +4,8 @@
 # Current working directory must not have whitespaces in its name
 
 # Usage Examples:
-# ./verifytc.sh exec.cpp testCases
-# ./verifytc.sh exec.cpp RandomDirectory1/RandomDirectory2/testCases
+# ./miniTest.sh exec.cpp testCases
+# ./miniTest.sh exec.cpp RandomDirectory1/RandomDirectory2/testCases
 
 # Get the current path as a variable to come back later
 execPath="`pwd`"
@@ -16,6 +16,7 @@ execPath="`pwd`"
 execName="`ls | grep $1 | sed 's/.cpp//'`"
 
 # Compile the given C/C++ filename (stored in argument 1)
+# YOU MAY EDIT THIS LINE OF CODE WHEN NEEDED
 g++ -pedantic-errors -std=c++11 $1 -o $execName
 
 # Go to the test case file (stored in argument 2)
@@ -51,7 +52,7 @@ BIGreen='\033[1;92m'    # Bold High Intensity Green
 BIOrange='\033[1;94m'   # Bold High Intensity Orange
 NC='\033[0m'            # No color
 
-# Trap the process if there is any error
+# Stop the process if there is any error
 # We need to do this if there is large input with thousands of lines
 # Errors such as segmentation faults can occur mid way during input
 
