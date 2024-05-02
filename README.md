@@ -7,7 +7,7 @@ It's a rather simple script. Firstly, it scrapes the test folder for `.in` and `
 The script also uses `trap` so that the loop is exited any time there is an error. It prints the error message and terminates the process. This is especially helpful when we have a large number of lines from the `.in` files.
 
 ## Important Notes
-There are two scenarios that will harm the execution of MiniTest. The code will not execute properly if any of these are violated.
+There are two scenarios that will harm the execution of `MiniTest`. The code will not execute properly if any of these are violated.
 - This script assumes that the number of `.in` and `.out` files are equal.
 - This script requires that the execution path, that is, the name of the working directory, which by default is MiniTest to not have whitespaces.
 
