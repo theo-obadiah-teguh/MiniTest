@@ -6,6 +6,8 @@ It's a rather simple script. Firstly, it scrapes the test folder for `.in` and `
 
 The script also uses `trap` so that the loop is exited any time there is an error. It prints the error message and terminates the process. This is especially helpful when we have a large number of lines from the `.in` files.
 
+There are some usage examples in the commented lines of the code. There are also extra instructions for compiling and switching between C and C++. Users are encouraged to read the documentation.
+
 ## Important Notes
 There are two scenarios that will harm the execution of `MiniTest`. The code will not execute properly if any of these are violated.
 - This script assumes that the number of `.in` and `.out` files are equal.
