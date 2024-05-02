@@ -2,7 +2,9 @@
 Automated C/C++ testing and compiling for daily assignments with Bash. Useful for small-scale tasks, scripts, and daily workflows. I built this simple script to help me with coursework at the University of Hong Kong. It saved me a ton of time when debugging.
 
 ## How It Works
-It's a rather simple script. Firstly, it scrapes the test folder for `.in` and `.out` files. It stores the name of these files in two arrays, one for input and the other for output. Then we use a loop to go through every single entry, and direct the input file name as standard input to the compiled executable. Standard output is redirected to a temporary file called `output.txt`. Afterwards, the script uses `diff` to compare `output.txt` with the corresponding `.out` content. It will print pass or fail based on the results of `diff`. The script also uses `trap` so that the loop is exited any time there is an error. It prints the error message and terminates the process. This is especially helpful when we have a large number of lines from the `.in` files.
+It's a rather simple script. Firstly, it scrapes the test folder for `.in` and `.out` files. It stores the name of these files in two arrays, one for input and the other for output. Then we use a loop to go through every single entry, and direct the input file name as standard input to the compiled executable. Standard output is redirected to a temporary file called `output.txt`. Afterwards, the script uses `diff` to compare `output.txt` with the corresponding `.out` content. It will print pass or fail based on the results of `diff`. 
+
+The script also uses `trap` so that the loop is exited any time there is an error. It prints the error message and terminates the process. This is especially helpful when we have a large number of lines from the `.in` files.
 
 ## Important Notes
 There are two scenarios that will harm the execution of MiniTest. The code will not execute properly if any of these are violated.
