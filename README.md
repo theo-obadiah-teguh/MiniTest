@@ -1,5 +1,7 @@
 # MiniTest
-Automated C/C++ testing and compiling for daily assignments with Bash. Useful for small-scale tasks and daily workflows. I built this simple script to help me with school assignments at the University of Hong Kong. It saved me a ton of time when debugging, especially in COMP2113 Programming Technologies and COMP2119 Introduction to Data Structures and Algorithms. I decided to share this publicly, so it may be some help for other HKU students in the future.
+Automated C/C++ testing and compiling for daily assignments with Bash. Useful for small-scale tasks, scripts, and daily workflows. 
+
+I built this simple script to help me with school assignments at the University of Hong Kong. It saved me a ton of time when debugging, especially in COMP2113 Programming Technologies and COMP2119 Introduction to Data Structures and Algorithms. I decided to share this publicly, so it may be some help for other HKU students in the future.
 
 ## Execution Instructions:
 1. Make sure you have Git installed on your device.
