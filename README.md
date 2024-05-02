@@ -9,9 +9,10 @@ The script also uses `trap` so that the loop is exited any time there is an erro
 There are some usage examples in the commented lines of the code. There are also extra instructions for compiling and switching between C and C++. Users are encouraged to read the documentation.
 
 ## Important Notes
-There are two scenarios that will harm the execution of `MiniTest`. The code will not execute properly if any of these are violated.
+There are three conditions that will harm the execution of `MiniTest`. The code will not execute properly if any of these are violated.
 - This script assumes that the number of `.in` and `.out` files are equal.
 - This script requires that the execution path, that is, the name of the working directory, which by default is MiniTest to not have whitespaces.
+- When inputting the relative path as the second argument of `MiniTest` do not put `/` at the start of the path.
 
 ## Execution Instructions:
 1. Make sure you have Git installed on your device.
