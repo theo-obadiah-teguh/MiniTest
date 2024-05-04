@@ -11,7 +11,7 @@ There are some usage examples in the commented lines of the code. There are also
 ## Important Notes
 There are four conditions that will harm the execution of `MiniTest`. The code will not execute properly if any of these are violated.
 - This script assumes that the number of `.in` and `.out` files are equal.
-- This script requires that the `.in` and `.out` files have been ordered by name, such that the first `.in` corresponds to the first `.out` and so on.
+- This script requires that the alphabetically sorted list of `.in` and `.out` files have been ordered, such that the first `.in` corresponds to the first `.out` and so on.
 - This script requires that the execution path, that is, the name of the working directory, which by default is MiniTest to not have whitespaces.
 - When inputting the relative path as the second argument of `MiniTest`, do not put `/` at the start of the path. Input the path as if we were executing `cd` to the test folder.
 
